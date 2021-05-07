@@ -7,10 +7,10 @@ import Vue from "vue";
 Vue.use(VueRouter);
 
 const routes = [
-    { path: "/", component: ProductList },
-    { path: "/urunislemleri", component: ProductPurchase },
-    { path: "/uruncikislari", component: ProductSell },
-    { path: "*", redirect: "/" },
+    { path: "/vuejsandhtml", component: ProductList },
+    { path: "/vuejsandhtml/urunislemleri", component: ProductPurchase },
+    { path: "/vuejsandhtml/uruncikislari", component: ProductSell },
+    { path: "*", redirect: "/vuejsandhtml" },
 ]
 export const router = new VueRouter({
     mode: "history",
